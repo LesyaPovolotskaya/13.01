@@ -21,5 +21,5 @@ if (numberA < numberB)
 }
 if (numberA == numberB)
 {
-    Console.WriteLine($"Значения равны^ {numberA} = {numberB}");
+    Console.WriteLine($"Значения равны {numberA} = {numberB}");
 }
