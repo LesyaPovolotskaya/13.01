@@ -4,6 +4,9 @@
 // 5 -> 2, 4
 // 8 -> 2, 4, 6, 8
 
+
+//ПЕРВЫЙ ВАРИАНТ:
+
 // Console.WriteLine("Введите число больше 1: ");
 // int number = Convert.ToInt32(Console.ReadLine());
 // int count = 2;
@@ -13,6 +16,7 @@
 //     count = count + 2;
 // }
 
+//ВТОРОЙ ВАРИАНТ:
 
 Console.WriteLine("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
