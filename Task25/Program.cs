@@ -14,10 +14,10 @@ int numberB = Convert.ToInt32(Console.ReadLine());
 int power = Power(numberA, numberB);
 if (numberB > 0)
 {
-    Console.WriteLine($" {numberA} в степени {numberB}  = {power} ");
+    Console.WriteLine($" {numberA} в {numberB}-й степени = {power} ");
 }
 else
-    Console.WriteLine("Введите натуральное число B : ");
+    Console.WriteLine("Число B должно быть натуральным : ");
 
 
 
