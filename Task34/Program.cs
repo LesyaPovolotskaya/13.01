@@ -41,4 +41,4 @@ int[] arr = CreateArrayRndInt(5, 100, 999);
 PrintArray(arr);
 int answer = ElementsCount(arr, 100, 999);
 Console.WriteLine();
-Console.WriteLine($"Количество искомых элементов' -> {answer}");
+Console.WriteLine($"Количество четных чисел в массиве' -> {answer}");
