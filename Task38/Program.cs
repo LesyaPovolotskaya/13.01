@@ -42,7 +42,7 @@ double MinMaxNumbersArrayDouble(int[] arr)
         {
             maxNumber = arr[i];
         }
-        if (arr[i] < maxNumber)
+        if (arr[i] < minNumber)
         {
             minNumber = arr[i];
         }
