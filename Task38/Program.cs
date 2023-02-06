@@ -5,9 +5,6 @@
 
 
 
-
-
-
 double[] CreateArrayRndDouble(int size, int min, int max)
 {
     double[] arr = new double[size];
@@ -20,7 +17,7 @@ double[] CreateArrayRndDouble(int size, int min, int max)
     return arr;
 }
 
-void PrintArrayDouble(double[] arr)
+void PrintArrayDouble(int[] arr)
 {
     Console.Write("[");
     for (int i = 0; i < arr.Length; i++)
@@ -47,14 +44,14 @@ double MinMaxNumbersArrayDouble(int[] arr)
             minNumber = arr[i];
         }
         
-        double result = maxNumber - minNumber;
-        return result;
+        
     }
-
+     double result = maxNumber - minNumber;
+    return result;
 }
 
 double[] arr = CreateArrayRndDouble(5, 5, 10);
 PrintArrayDouble(arr);
 double result = MinMaxNumbersArrayDouble(arr);
-Console.WriteLine($"разница' -> {result} ");
+Console.WriteLine(result);
 
