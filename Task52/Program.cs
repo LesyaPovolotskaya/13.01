@@ -37,27 +37,43 @@ void PrintMatrix(int[,] matrix)
     }
 }
 
-double AverageNum(int[,] matrix)
+double[] AverageNum(int[,] array)
 {
+    double[] columnsArray = new double[array.GetLength(1)];
     double sum = 0;
-    for (int i = 0; i < matrix.GetLength(0); i++)
+    for (int j = 0; j < array.GetLength(1); j++)
     {
-        for (int j = 0; j < matrix.GetLength(1); j++)
+        sum = 0;
+        for (int i = 0; i < array.GetLength(0); i++)
         {
-            sum += matrix[i, j];
-            // sum++;
+            sum = sum + array[i, j];
         }
+        double sumColumns = Math.Round(sum / array.GetLength(0), 2);
+
+        columnsArray[j] = sumColumns;
     }
-    double result = sum / matrix.GetLength(0);
-    return result;
+    return columnsArray;
+
+}
+
+void PrintArray(double[] arr)
+{
+    Console.Write("  ");
+    for (int i = 0; i < arr.Length; i++)
+    {
+        if (i < arr.Length - 1) Console.Write(arr[i] + ",   ");
+        else Console.Write(arr[i]);
+    }
+    Console.Write("   ");
 }
 
 
-int [,] matrix = CreateMatrixRndInt(2, 3, 1, 10);
+
+int[,] matrix = CreateMatrixRndInt(3, 4, -10, 10);
 PrintMatrix(matrix);
 Console.WriteLine("");
-double result = AverageNum(matrix);
-Console.WriteLine(result);
+double[] averageNum = AverageNum(matrix);
+PrintArray(averageNum);
 
 
 
